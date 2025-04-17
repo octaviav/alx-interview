@@ -10,7 +10,7 @@ def pascal_triangle(n):
 
     Args:
         n (int): The number of rows to generate
-        
+
     Returns:
         list: Empty list if n <=0
     """
@@ -24,7 +24,7 @@ def pascal_triangle(n):
         curr_row = [1]
 
         for y in range(1, x):
-            curr_row.append(prev_rIow[y-1] + prev_row[y])
+            curr_row.append(prev_row[y-1] + prev_row[y])
 
         curr_row.append(1)
 
